@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.8.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - ReSwift (6.1.1)
+  - SDWebImage (5.18.6):
+    - SDWebImage/Core (= 5.18.6)
+  - SDWebImage/Core (5.18.6)
+  - SnapKit (5.6.0)
+
+DEPENDENCIES:
+  - Moya
+  - ReSwift
+  - SDWebImage
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Moya
+    - ReSwift
+    - SDWebImage
+    - SnapKit
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  ReSwift: 929afd2c897f0d33c76c730710a31bb2d2a66713
+  SDWebImage: 3d8caa2430f3d674dbb3e515df4a100a2105af5f
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+
+PODFILE CHECKSUM: 0aa6e0890a673fc703c52f69596e31ad060c8aa4
+
+COCOAPODS: 1.14.3

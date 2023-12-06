@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		069763E6959F75FA225267DC /* Pods_ReduxMoyaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FEB5CA97261D231C964705E /* Pods_ReduxMoyaDemo.framework */; };
+		CE94D7202B1DEA2400F84E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94D71F2B1DEA2400F84E62 /* AppDelegate.swift */; };
+		CE94D7222B1DEA2400F84E62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94D7212B1DEA2400F84E62 /* SceneDelegate.swift */; };
+		CE94D7242B1DEA2400F84E62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94D7232B1DEA2400F84E62 /* ViewController.swift */; };
+		CE94D7292B1DEA2500F84E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE94D7282B1DEA2500F84E62 /* Assets.xcassets */; };
+		CE94D72C2B1DEA2500F84E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE94D72A2B1DEA2500F84E62 /* LaunchScreen.storyboard */; };
+		CE94D7372B1E0E3D00F84E62 /* InteractiveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE94D7362B1E0E3D00F84E62 /* InteractiveButton.swift */; };
+		CEAF20572B1F3A7200D231BD /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF20562B1F3A7200D231BD /* AppState.swift */; };
+		CEAF20592B1F3AA100D231BD /* CounterActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF20582B1F3AA100D231BD /* CounterActions.swift */; };
+		CEAF205D2B1F4E2100D231BD /* LoadActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF205C2B1F4E2100D231BD /* LoadActions.swift */; };
+		CEAF205F2B1F5A5600D231BD /* ImageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF205E2B1F5A5600D231BD /* ImageState.swift */; };
+		CEAF20612B1F5BC300D231BD /* MainScreenReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF20602B1F5BC200D231BD /* MainScreenReducer.swift */; };
+		CEAF20642B1F5E9C00D231BD /* MainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF20632B1F5E9C00D231BD /* MainStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FEB5CA97261D231C964705E /* Pods_ReduxMoyaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReduxMoyaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4219137CC9DB1B9CCC9282 /* Pods-ReduxMoyaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxMoyaDemo.debug.xcconfig"; path = "Target Support Files/Pods-ReduxMoyaDemo/Pods-ReduxMoyaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE94D71C2B1DEA2400F84E62 /* ReduxMoyaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxMoyaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE94D71F2B1DEA2400F84E62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE94D7212B1DEA2400F84E62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE94D7232B1DEA2400F84E62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE94D7282B1DEA2500F84E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE94D72B2B1DEA2500F84E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE94D72D2B1DEA2500F84E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE94D7362B1E0E3D00F84E62 /* InteractiveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveButton.swift; sourceTree = "<group>"; };
+		CEAF20562B1F3A7200D231BD /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		CEAF20582B1F3AA100D231BD /* CounterActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterActions.swift; sourceTree = "<group>"; };
+		CEAF205C2B1F4E2100D231BD /* LoadActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadActions.swift; sourceTree = "<group>"; };
+		CEAF205E2B1F5A5600D231BD /* ImageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageState.swift; sourceTree = "<group>"; };
+		CEAF20602B1F5BC200D231BD /* MainScreenReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenReducer.swift; sourceTree = "<group>"; };
+		CEAF20632B1F5E9C00D231BD /* MainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainStore.swift; sourceTree = "<group>"; };
+		D307FB565589E3F0296A523F /* Pods-ReduxMoyaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxMoyaDemo.release.xcconfig"; path = "Target Support Files/Pods-ReduxMoyaDemo/Pods-ReduxMoyaDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE94D7192B1DEA2400F84E62 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				069763E6959F75FA225267DC /* Pods_ReduxMoyaDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		014200B0EAE871E2620A8610 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FEB5CA97261D231C964705E /* Pods_ReduxMoyaDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841775AC890C223AA9C28975 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D4219137CC9DB1B9CCC9282 /* Pods-ReduxMoyaDemo.debug.xcconfig */,
+				D307FB565589E3F0296A523F /* Pods-ReduxMoyaDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE94D7132B1DEA2400F84E62 = {
+			isa = PBXGroup;
+			children = (
+				CE94D71E2B1DEA2400F84E62 /* ReduxMoyaDemo */,
+				CE94D71D2B1DEA2400F84E62 /* Products */,
+				841775AC890C223AA9C28975 /* Pods */,
+				014200B0EAE871E2620A8610 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE94D71D2B1DEA2400F84E62 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE94D71C2B1DEA2400F84E62 /* ReduxMoyaDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE94D71E2B1DEA2400F84E62 /* ReduxMoyaDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CE94D71F2B1DEA2400F84E62 /* AppDelegate.swift */,
+				CE94D7212B1DEA2400F84E62 /* SceneDelegate.swift */,
+				CE94D7392B1F0A0600F84E62 /* Scenes */,
+				CEAF20622B1F5E8800D231BD /* Stores */,
+				CE94D73A2B1F0A7F00F84E62 /* States */,
+				CE94D73B2B1F0AAC00F84E62 /* Reducers */,
+				CE94D73C2B1F0AC000F84E62 /* Actions */,
+				CE94D7342B1E0E2700F84E62 /* Common */,
+				CE94D7382B1E19CE00F84E62 /* Services */,
+				CE94D7332B1DECC100F84E62 /* Resources */,
+			);
+			path = ReduxMoyaDemo;
+			sourceTree = "<group>";
+		};
+		CE94D7332B1DECC100F84E62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE94D7282B1DEA2500F84E62 /* Assets.xcassets */,
+				CE94D72A2B1DEA2500F84E62 /* LaunchScreen.storyboard */,
+				CE94D72D2B1DEA2500F84E62 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CE94D7342B1E0E2700F84E62 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CE94D7352B1E0E3000F84E62 /* Controls */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CE94D7352B1E0E3000F84E62 /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CE94D7362B1E0E3D00F84E62 /* InteractiveButton.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		CE94D7382B1E19CE00F84E62 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CE94D7392B1F0A0600F84E62 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				CE94D7232B1DEA2400F84E62 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		CE94D73A2B1F0A7F00F84E62 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF20562B1F3A7200D231BD /* AppState.swift */,
+				CEAF205E2B1F5A5600D231BD /* ImageState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		CE94D73B2B1F0AAC00F84E62 /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF20602B1F5BC200D231BD /* MainScreenReducer.swift */,
+			);
+			path = Reducers;
+			sourceTree = "<group>";
+		};
+		CE94D73C2B1F0AC000F84E62 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF20582B1F3AA100D231BD /* CounterActions.swift */,
+				CEAF205C2B1F4E2100D231BD /* LoadActions.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		CEAF20622B1F5E8800D231BD /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				CEAF20632B1F5E9C00D231BD /* MainStore.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE94D71B2B1DEA2400F84E62 /* ReduxMoyaDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE94D7302B1DEA2500F84E62 /* Build configuration list for PBXNativeTarget "ReduxMoyaDemo" */;
+			buildPhases = (
+				9E91CD6E1B047C3326C8832A /* [CP] Check Pods Manifest.lock */,
+				CE94D7182B1DEA2400F84E62 /* Sources */,
+				CE94D7192B1DEA2400F84E62 /* Frameworks */,
+				CE94D71A2B1DEA2400F84E62 /* Resources */,
+				DE48EDF5611CAE94E0952B2C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReduxMoyaDemo;
+			productName = ReduxMoyaDemo;
+			productReference = CE94D71C2B1DEA2400F84E62 /* ReduxMoyaDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE94D7142B1DEA2400F84E62 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CE94D71B2B1DEA2400F84E62 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = CE94D7172B1DEA2400F84E62 /* Build configuration list for PBXProject "ReduxMoyaDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE94D7132B1DEA2400F84E62;
+			productRefGroup = CE94D71D2B1DEA2400F84E62 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE94D71B2B1DEA2400F84E62 /* ReduxMoyaDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE94D71A2B1DEA2400F84E62 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE94D72C2B1DEA2500F84E62 /* LaunchScreen.storyboard in Resources */,
+				CE94D7292B1DEA2500F84E62 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E91CD6E1B047C3326C8832A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReduxMoyaDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE48EDF5611CAE94E0952B2C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxMoyaDemo/Pods-ReduxMoyaDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReduxMoyaDemo/Pods-ReduxMoyaDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReduxMoyaDemo/Pods-ReduxMoyaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE94D7182B1DEA2400F84E62 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEAF20592B1F3AA100D231BD /* CounterActions.swift in Sources */,
+				CEAF205D2B1F4E2100D231BD /* LoadActions.swift in Sources */,
+				CE94D7372B1E0E3D00F84E62 /* InteractiveButton.swift in Sources */,
+				CEAF20572B1F3A7200D231BD /* AppState.swift in Sources */,
+				CE94D7242B1DEA2400F84E62 /* ViewController.swift in Sources */,
+				CE94D7202B1DEA2400F84E62 /* AppDelegate.swift in Sources */,
+				CEAF20642B1F5E9C00D231BD /* MainStore.swift in Sources */,
+				CE94D7222B1DEA2400F84E62 /* SceneDelegate.swift in Sources */,
+				CEAF205F2B1F5A5600D231BD /* ImageState.swift in Sources */,
+				CEAF20612B1F5BC300D231BD /* MainScreenReducer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE94D72A2B1DEA2500F84E62 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE94D72B2B1DEA2500F84E62 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE94D72E2B1DEA2500F84E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE94D72F2B1DEA2500F84E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE94D7312B1DEA2500F84E62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4219137CC9DB1B9CCC9282 /* Pods-ReduxMoyaDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W53T2K88YK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReduxMoyaDemo/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cosmopolito.ReduxMoyaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CE94D7322B1DEA2500F84E62 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D307FB565589E3F0296A523F /* Pods-ReduxMoyaDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W53T2K88YK;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReduxMoyaDemo/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Cosmopolito.ReduxMoyaDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE94D7172B1DEA2400F84E62 /* Build configuration list for PBXProject "ReduxMoyaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE94D72E2B1DEA2500F84E62 /* Debug */,
+				CE94D72F2B1DEA2500F84E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE94D7302B1DEA2500F84E62 /* Build configuration list for PBXNativeTarget "ReduxMoyaDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE94D7312B1DEA2500F84E62 /* Debug */,
+				CE94D7322B1DEA2500F84E62 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE94D7142B1DEA2400F84E62 /* Project object */;
+}
